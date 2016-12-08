@@ -14,6 +14,8 @@ if v:progname =~? "evim"
   finish
 endif
 
+set number
+
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -202,7 +204,7 @@ let NERDCompactSexyComs=1   " 多行注释时样子更好看
 "-----------------------------------------------------------------
 " plugin - DoxygenToolkit.vim  由注释生成文档，并且能够快速生成函数标准注释
 "-----------------------------------------------------------------
-let g:DoxygenToolkit_authorName="chenhu@ruijie.com.cn"
+let g:DoxygenToolkit_authorName="hiluantu@gmail.com"
 let g:DoxygenToolkit_briefTag_funcName="yes"
 map <leader>da :DoxAuthor<CR>
 map <leader>df :Dox<CR>
